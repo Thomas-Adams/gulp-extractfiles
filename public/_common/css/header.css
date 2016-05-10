@@ -1,0 +1,96 @@
+/* General settings */
+/* left settings */
+/* left settings */
+/* top settings */
+/* line 39, ../../../sass/header.scss */
+header.left {
+  color: #EFEFEF;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+/* line 44, ../../../sass/header.scss */
+header.left h1 {
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+/* line 49, ../../../sass/header.scss */
+header.left i {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+/* line 56, ../../../sass/header.scss */
+header.left .logo {
+  width: 35%;
+  position: absolute;
+  top: 0;
+  right: 3%;
+  z-index: 6000;
+}
+
+/* line 63, ../../../sass/header.scss */
+header.right {
+  color: #EFEFEF;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+/* line 68, ../../../sass/header.scss */
+header.right h1 {
+  position: absolute;
+  top: 0px;
+  left: 40%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+/* line 73, ../../../sass/header.scss */
+header.right i {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  position: absolute;
+  right: 1%;
+}
+
+/* line 83, ../../../sass/header.scss */
+header.top {
+  color: #EFEFEF;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+/* line 88, ../../../sass/header.scss */
+header.top h1 {
+  position: absolute;
+  top: 0px;
+  left: 40%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+/* line 93, ../../../sass/header.scss */
+header.top i {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  position: absolute;
+  right: 1%;
+}

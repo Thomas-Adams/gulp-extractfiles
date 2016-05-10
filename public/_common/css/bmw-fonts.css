@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'bmwtypechineseregular';
+  src: url("fonts/bmw/bmwtypechinese-webfont.eot");
+  src: url("fonts/bmw/bmwtypechinese-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bmw/bmwtypechinese-webfont.woff2") format("woff2"), url("fonts/bmw/bmwtypechinese-webfont.woff") format("woff"), url("fonts/bmw/bmwtypechinese-webfont.ttf") format("truetype"), url("fonts/bmw/bmwtypechinese-webfont.svg#bmwtypechineseregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

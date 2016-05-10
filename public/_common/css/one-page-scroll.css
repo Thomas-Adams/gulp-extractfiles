@@ -1,0 +1,425 @@
+/* Positioning of page navigation buttons */
+/* line 4, ../../../sass/one-page-scroll.scss */
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+/* line 10, ../../../sass/one-page-scroll.scss */
+.main {
+  z-index: 0;
+}
+
+/* line 14, ../../../sass/one-page-scroll.scss */
+.pagetransition {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+/* line 19, ../../../sass/one-page-scroll.scss */
+.nopagetransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  transition: none !important;
+}
+
+/* line 23, ../../../sass/one-page-scroll.scss */
+div#scroll-body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+}
+
+/* line 33, ../../../sass/one-page-scroll.scss */
+div#scroll-body.page2 {
+  height: 100%;
+  top: -100%;
+}
+
+/* line 37, ../../../sass/one-page-scroll.scss */
+div#scroll-body.page2.page3 {
+  top: -200%;
+  height: 100%;
+}
+
+/* line 42, ../../../sass/one-page-scroll.scss */
+div#scroll-body.page2.page3.page4 {
+  top: -300%;
+  height: 100%;
+}
+
+/* line 47, ../../../sass/one-page-scroll.scss */
+div#scroll-body.page2.page3.page4.page5 {
+  top: -400%;
+  height: 100%;
+}
+
+/* line 53, ../../../sass/one-page-scroll.scss */
+div#scroll-body.page2.page3.page4.page5.page6 {
+  top: -500%;
+  height: 100%;
+}
+
+/* line 59, ../../../sass/one-page-scroll.scss */
+div#scroll-body.page2.page3.page4.page5.page6.page7 {
+  top: -600%;
+  height: 100%;
+}
+
+/* line 64, ../../../sass/one-page-scroll.scss */
+div#scroll-body.page2.page3.page4.page5.page6.page7.page8 {
+  top: -700%;
+  height: 100%;
+}
+
+/* line 69, ../../../sass/one-page-scroll.scss */
+div#scroll-body.page2.page3.page4.page5.page6.page7.page8.page9 {
+  top: -800%;
+  height: 100%;
+}
+
+/* line 75, ../../../sass/one-page-scroll.scss */
+div#scroll-body.page2.page3.page4.page5.page6.page7.page8.page9.page10 {
+  top: -900%;
+  height: 100%;
+}
+
+/* line 81, ../../../sass/one-page-scroll.scss */
+div#scroll-body.page2.page3.page4.page5.page6.page7.page8.page9.page10.page11 {
+  top: -1000%;
+  height: 100%;
+}
+
+/* line 87, ../../../sass/one-page-scroll.scss */
+div#scroll-body.page2.page3.page4.page5.page6.page7.page8.page9.page10.page11.page12 {
+  top: -1100%;
+  height: 100%;
+}
+
+/* line 93, ../../../sass/one-page-scroll.scss */
+section {
+  text-align: center;
+  max-width: 100%;
+  position: relative;
+}
+
+/* line 99, ../../../sass/one-page-scroll.scss */
+div.content {
+  position: absolute;
+  top: 0px;
+}
+
+/* This is mainly for the background images of each section ("page"). */
+/* !FOCUSED IMAGES */
+/*-----------------------------------------*/
+/* line 107, ../../../sass/one-page-scroll.scss */
+.focuspoint {
+  position: relative;
+  /*Any position but static should work*/
+  overflow: hidden;
+  height: 100%;
+  background: black url("images/loader.gif") no-repeat scroll center center;
+}
+
+/* line 113, ../../../sass/one-page-scroll.scss */
+.focuspoint img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  display: block;
+  /* fill and maintain aspect ratio */
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: none;
+  max-width: none;
+}
+
+/* lazy loading styles */
+/* line 130, ../../../sass/one-page-scroll.scss */
+.lazy {
+  opacity: 0;
+  -webkit-transition: opacity 0.333s ease-in;
+  -moz-transition: opacity 0.333s ease-in;
+  transition: opacity 0.333s ease-in;
+}
+
+/* line 135, ../../../sass/one-page-scroll.scss */
+.lazy-loaded {
+  opacity: 1;
+}
+
+/* page navigation buttons */
+/* line 141, ../../../sass/one-page-scroll.scss */
+.nav-button-wrapper-up, .nav-button-wrapper-down {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+}
+
+/* line 147, ../../../sass/one-page-scroll.scss */
+.nav-button-wrapper-down {
+  bottom: 10px;
+}
+
+/* line 151, ../../../sass/one-page-scroll.scss */
+.nav-button-wrapper-up {
+  top: 10px;
+}
+
+/* Individual content part, this part you need to adapt, to fit your
+ * individual content, if you need for instance on different pages
+ * different animations, it is a good practice to assign each section
+ * and ID.
+ */
+/* line 163, ../../../sass/one-page-scroll.scss */
+#frog, #kea {
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+/* line 173, ../../../sass/one-page-scroll.scss */
+#frog h2:nth-child(2), #kea h2:nth-child(2) {
+  text-indent: -2000px;
+  -webkit-transition: text-indent 0.5s ease-out 0.5s;
+  -moz-transition: text-indent 0.5s ease-out 0.5s;
+  transition: text-indent 0.5s ease-out 0.5s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  max-width: 90%;
+}
+/* line 180, ../../../sass/one-page-scroll.scss */
+#frog p:nth-child(3), #kea p:nth-child(3) {
+  text-indent: -2000px;
+  -webkit-transition: text-indent 0.5s ease-out 1s;
+  -moz-transition: text-indent 0.5s ease-out 1s;
+  transition: text-indent 0.5s ease-out 1s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  max-width: 90%;
+}
+/* line 186, ../../../sass/one-page-scroll.scss */
+#frog p:nth-child(4), #kea p:nth-child(4) {
+  text-indent: -2000px;
+  -webkit-transition: text-indent 0.5s ease-out 1.5s;
+  -moz-transition: text-indent 0.5s ease-out 1.5s;
+  transition: text-indent 0.5s ease-out 1.5s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  max-width: 90%;
+}
+/* line 194, ../../../sass/one-page-scroll.scss */
+#frog img:nth-child(5), #kea img:nth-child(5) {
+  position: relative;
+  left: -2000px;
+  -webkit-transition: left 0.5s ease-out 2s;
+  -moz-transition: left 0.5s ease-out 2s;
+  transition: left 0.5s ease-out 2s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  max-width: 90%;
+}
+/* line 202, ../../../sass/one-page-scroll.scss */
+#frog h2.show, #frog p.show, #kea h2.show, #kea p.show {
+  text-indent: 0px;
+  max-width: 90%;
+}
+/* line 207, ../../../sass/one-page-scroll.scss */
+#frog img.show, #kea img.show {
+  left: 0px;
+  max-width: 90%;
+}
+
+/* line 213, ../../../sass/one-page-scroll.scss */
+#sharkhorse, #monkey {
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+/* line 224, ../../../sass/one-page-scroll.scss */
+#sharkhorse h2:nth-child(2), #monkey h2:nth-child(2) {
+  text-indent: -2000px;
+  -webkit-transition: text-indent 1s ease-out 0.7s;
+  -moz-transition: text-indent 1s ease-out 0.7s;
+  transition: text-indent 1s ease-out 0.7s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  max-width: 90%;
+}
+/* line 231, ../../../sass/one-page-scroll.scss */
+#sharkhorse p:nth-child(3), #monkey p:nth-child(3) {
+  text-indent: -2000px;
+  -webkit-transition: text-indent 1s ease-out 1.2s;
+  -moz-transition: text-indent 1s ease-out 1.2s;
+  transition: text-indent 1s ease-out 1.2s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  max-width: 90%;
+}
+/* line 237, ../../../sass/one-page-scroll.scss */
+#sharkhorse p:nth-child(4), #monkey p:nth-child(4) {
+  text-indent: -2000px;
+  -webkit-transition: text-indent 1s ease-out 1.7s;
+  -moz-transition: text-indent 1s ease-out 1.7s;
+  transition: text-indent 1s ease-out 1.7s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  max-width: 90%;
+}
+/* line 245, ../../../sass/one-page-scroll.scss */
+#sharkhorse img:nth-child(5), #monkey img:nth-child(5) {
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  position: relative;
+  top: 200px;
+  left: 200px;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0) scale(1.3);
+  -moz-transform: translate3d(0, 0, 0) scale(1.3);
+  -ms-transform: translate3d(0, 0, 0) scale(1.3);
+  -o-transform: translate3d(0, 0, 0) scale(1.3);
+  transform: translate3d(0, 0, 0) scale(1.3);
+  max-width: 90%;
+}
+/* line 253, ../../../sass/one-page-scroll.scss */
+#sharkhorse h2.show, #sharkhorse p.show, #monkey h2.show, #monkey p.show {
+  text-indent: 0px;
+  max-width: 90%;
+}
+/* line 258, ../../../sass/one-page-scroll.scss */
+#sharkhorse img.show, #monkey img.show {
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  max-width: 90%;
+}
+
+/* line 268, ../../../sass/one-page-scroll.scss */
+#zebras, #buffalo, #lion {
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+/* line 279, ../../../sass/one-page-scroll.scss */
+#zebras h2:nth-child(2), #buffalo h2:nth-child(2), #lion h2:nth-child(2) {
+  position: relative;
+  left: 4000px;
+  -webkit-transition: left 1s ease-out 0.7s;
+  -moz-transition: left 1s ease-out 0.7s;
+  transition: left 1s ease-out 0.7s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  max-width: 90%;
+}
+/* line 287, ../../../sass/one-page-scroll.scss */
+#zebras p:nth-child(3), #buffalo p:nth-child(3), #lion p:nth-child(3) {
+  position: relative;
+  left: 4000px;
+  -webkit-transition: left 1s ease-out 1.2s;
+  -moz-transition: left 1s ease-out 1.2s;
+  transition: left 1s ease-out 1.2s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  max-width: 90%;
+}
+/* line 294, ../../../sass/one-page-scroll.scss */
+#zebras p:nth-child(4), #buffalo p:nth-child(4), #lion p:nth-child(4) {
+  position: relative;
+  left: 4000px;
+  -webkit-transition: left 1s ease-out 1.7s;
+  -moz-transition: left 1s ease-out 1.7s;
+  transition: left 1s ease-out 1.7s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  max-width: 90%;
+}
+/* line 303, ../../../sass/one-page-scroll.scss */
+#zebras img:nth-child(5), #buffalo img:nth-child(5), #lion img:nth-child(5) {
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  position: relative;
+  top: 200px;
+  left: 200px;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0) scale(1.3);
+  -moz-transform: translate3d(0, 0, 0) scale(1.3);
+  -ms-transform: translate3d(0, 0, 0) scale(1.3);
+  -o-transform: translate3d(0, 0, 0) scale(1.3);
+  transform: translate3d(0, 0, 0) scale(1.3);
+  max-width: 90%;
+}
+/* line 311, ../../../sass/one-page-scroll.scss */
+#zebras h2.show, #zebras p.show, #buffalo h2.show, #buffalo p.show, #lion h2.show, #lion p.show {
+  left: 0px;
+  max-width: 90%;
+}
+/* line 316, ../../../sass/one-page-scroll.scss */
+#zebras img.show, #buffalo img.show, #lion img.show {
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  max-width: 90%;
+}

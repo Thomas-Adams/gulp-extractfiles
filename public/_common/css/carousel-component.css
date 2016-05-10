@@ -1,0 +1,433 @@
+/* line 4, ../../../sass/carousel-component.scss */
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+/* line 12, ../../../sass/carousel-component.scss */
+div#scroll-body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  transition: top 0.4s ease-in;
+  -ms-transition: top 0.4s ease-in;
+  -moz-transition: top 0.4s ease-in;
+  -webkit-transition: top 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+}
+
+/* line 26, ../../../sass/carousel-component.scss */
+section {
+  text-align: center;
+}
+
+/* line 30, ../../../sass/carousel-component.scss */
+.blue {
+  background-color: blue;
+  color: white;
+}
+
+/* line 38, ../../../sass/carousel-component.scss */
+.magenta {
+  background-color: magenta;
+  color: white;
+}
+
+/* line 43, ../../../sass/carousel-component.scss */
+.red {
+  background-color: red;
+  color: white;
+}
+
+/* line 48, ../../../sass/carousel-component.scss */
+.yellow {
+  background-color: yellow;
+  color: white;
+}
+
+/* line 53, ../../../sass/carousel-component.scss */
+.green {
+  background-color: green;
+  color: white;
+}
+
+/* line 58, ../../../sass/carousel-component.scss */
+.black {
+  background-color: black;
+  color: white;
+}
+
+/* line 63, ../../../sass/carousel-component.scss */
+.aqua {
+  background-color: aqua;
+}
+
+/* !FOCUSED IMAGES */
+/*-----------------------------------------*/
+/* line 69, ../../../sass/carousel-component.scss */
+.focuspoint {
+  position: relative;
+  /*Any position but static should work*/
+  overflow: hidden;
+  height: 100%;
+  background: black url("images/loader.gif") no-repeat scroll center center;
+}
+
+/* line 75, ../../../sass/carousel-component.scss */
+.focuspoint img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  display: block;
+  /* fill and maintain aspect ratio */
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: none;
+  max-width: none;
+}
+
+/* line 88, ../../../sass/carousel-component.scss */
+.lazy {
+  opacity: 0;
+  transition: opacity .333s ease-in;
+}
+
+/* line 93, ../../../sass/carousel-component.scss */
+.lazy-loaded {
+  opacity: 1;
+}
+
+/* line 99, ../../../sass/carousel-component.scss */
+#frog, #kea {
+  position: relative;
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+/* line 110, ../../../sass/carousel-component.scss */
+#frog h2:nth-child(2), #kea h2:nth-child(2) {
+  text-indent: -2000px;
+  -webkit-transition: text-indent 0.5s ease-out 0.5s;
+  -moz-transition: text-indent 0.5s ease-out 0.5s;
+  transition: text-indent 0.5s ease-out 0.5s;
+  transform: translate3d(0, 0, 0);
+}
+/* line 116, ../../../sass/carousel-component.scss */
+#frog p:nth-child(3), #kea p:nth-child(3) {
+  text-indent: -2000px;
+  -webkit-transition: text-indent 0.5s ease-out 1s;
+  -moz-transition: text-indent 0.5s ease-out 1s;
+  transition: text-indent 0.5s ease-out 1s;
+  transform: translate3d(0, 0, 0);
+}
+/* line 121, ../../../sass/carousel-component.scss */
+#frog p:nth-child(4), #kea p:nth-child(4) {
+  text-indent: -2000px;
+  -webkit-transition: text-indent 0.5s ease-out 1.5s;
+  -moz-transition: text-indent 0.5s ease-out 1.5s;
+  transition: text-indent 0.5s ease-out 1.5s;
+  transform: translate3d(0, 0, 0);
+}
+/* line 128, ../../../sass/carousel-component.scss */
+#frog img:nth-child(5), #kea img:nth-child(5) {
+  position: relative;
+  left: -2000px;
+  -webkit-transition: left 0.5s ease-out 2s;
+  -moz-transition: left 0.5s ease-out 2s;
+  transition: left 0.5s ease-out 2s;
+  transform: translate3d(0, 0, 0);
+}
+/* line 135, ../../../sass/carousel-component.scss */
+#frog h2.show, #frog p.show, #kea h2.show, #kea p.show {
+  text-indent: 0px;
+}
+/* line 139, ../../../sass/carousel-component.scss */
+#frog img.show, #kea img.show {
+  left: 0px;
+}
+
+/* line 144, ../../../sass/carousel-component.scss */
+#sharkhorse, #monkey {
+  position: relative;
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+/* line 156, ../../../sass/carousel-component.scss */
+#sharkhorse h2:nth-child(2), #monkey h2:nth-child(2) {
+  text-indent: -2000px;
+  -webkit-transition: text-indent 1s ease-out 0.7s;
+  -moz-transition: text-indent 1s ease-out 0.7s;
+  transition: text-indent 1s ease-out 0.7s;
+  transform: translate3d(0, 0, 0);
+}
+/* line 162, ../../../sass/carousel-component.scss */
+#sharkhorse p:nth-child(3), #monkey p:nth-child(3) {
+  text-indent: -2000px;
+  -webkit-transition: text-indent 1s ease-out 1.2s;
+  -moz-transition: text-indent 1s ease-out 1.2s;
+  transition: text-indent 1s ease-out 1.2s;
+  transform: translate3d(0, 0, 0);
+}
+/* line 167, ../../../sass/carousel-component.scss */
+#sharkhorse p:nth-child(4), #monkey p:nth-child(4) {
+  text-indent: -2000px;
+  -webkit-transition: text-indent 1s ease-out 1.7s;
+  -moz-transition: text-indent 1s ease-out 1.7s;
+  transition: text-indent 1s ease-out 1.7s;
+  transform: translate3d(0, 0, 0);
+}
+/* line 174, ../../../sass/carousel-component.scss */
+#sharkhorse img:nth-child(5), #monkey img:nth-child(5) {
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  position: relative;
+  top: 200px;
+  left: 200px;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) scale(1.3);
+}
+/* line 181, ../../../sass/carousel-component.scss */
+#sharkhorse h2.show, #sharkhorse p.show, #monkey h2.show, #monkey p.show {
+  text-indent: 0px;
+}
+/* line 185, ../../../sass/carousel-component.scss */
+#sharkhorse img.show, #monkey img.show {
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* line 194, ../../../sass/carousel-component.scss */
+#zebras, #buffalo, #lion {
+  position: relative;
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+/* line 206, ../../../sass/carousel-component.scss */
+#zebras h2:nth-child(2), #buffalo h2:nth-child(2), #lion h2:nth-child(2) {
+  position: relative;
+  left: 4000px;
+  -webkit-transition: left 1s ease-out 0.7s;
+  -moz-transition: left 1s ease-out 0.7s;
+  transition: left 1s ease-out 0.7s;
+  transform: translate3d(0, 0, 0);
+}
+/* line 213, ../../../sass/carousel-component.scss */
+#zebras p:nth-child(3), #buffalo p:nth-child(3), #lion p:nth-child(3) {
+  position: relative;
+  left: 4000px;
+  -webkit-transition: left 1s ease-out 1.2s;
+  -moz-transition: left 1s ease-out 1.2s;
+  transition: left 1s ease-out 1.2s;
+  transform: translate3d(0, 0, 0);
+}
+/* line 219, ../../../sass/carousel-component.scss */
+#zebras p:nth-child(4), #buffalo p:nth-child(4), #lion p:nth-child(4) {
+  position: relative;
+  left: 4000px;
+  -webkit-transition: left 1s ease-out 1.7s;
+  -moz-transition: left 1s ease-out 1.7s;
+  transition: left 1s ease-out 1.7s;
+  transform: translate3d(0, 0, 0);
+}
+/* line 227, ../../../sass/carousel-component.scss */
+#zebras img:nth-child(5), #buffalo img:nth-child(5), #lion img:nth-child(5) {
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  position: relative;
+  top: 200px;
+  left: 200px;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) scale(1.3);
+}
+/* line 234, ../../../sass/carousel-component.scss */
+#zebras h2.show, #zebras p.show, #buffalo h2.show, #buffalo p.show, #lion h2.show, #lion p.show {
+  left: 0px;
+}
+/* line 238, ../../../sass/carousel-component.scss */
+#zebras img.show, #buffalo img.show, #lion img.show {
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* line 250, ../../../sass/carousel-component.scss */
+.main {
+  z-index: 0;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 255, ../../../sass/carousel-component.scss */
+.gen-page-content {
+  left: 0px;
+  margin: 0px 0px 0px 0px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 262, ../../../sass/carousel-component.scss */
+.gen-sidebar {
+  position: absolute;
+  top: 0px;
+  left: -160px;
+  background: #333;
+  z-index: 0;
+  width: 160px;
+  height: 100%;
+  padding: 30px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+/* line 271, ../../../sass/carousel-component.scss */
+.gen-sidebar ul {
+  padding: 0px 0px 0px 0px;
+}
+/* line 274, ../../../sass/carousel-component.scss */
+.gen-sidebar ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+/* line 277, ../../../sass/carousel-component.scss */
+.gen-sidebar ul li a:hover {
+  color: white;
+}
+
+/* line 286, ../../../sass/carousel-component.scss */
+.gen-nav-toggle {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0px;
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  z-index: 1;
+  cursor: pointer;
+  height: 38px;
+  width: 38px;
+  line-height: 30px;
+  color: white;
+  background-color: transparent;
+  padding: 4px 4px 4px 4px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 305, ../../../sass/carousel-component.scss */
+#genSidebarToggler {
+  display: none;
+}
+/* line 311, ../../../sass/carousel-component.scss */
+#genSidebarToggler + .gen-page-wrap .gen-sidebar {
+  position: absolute;
+  top: 0px;
+  left: -160px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+/* line 317, ../../../sass/carousel-component.scss */
+#genSidebarToggler + .gen-page-wrap .gen-nav-toggle {
+  left: 0px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+/* line 322, ../../../sass/carousel-component.scss */
+#genSidebarToggler + .gen-page-wrap .gen-page-content {
+  left: 0px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+/* line 333, ../../../sass/carousel-component.scss */
+#genSidebarToggler:checked + .gen-page-wrap .gen-sidebar {
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+  left: 0px;
+}
+/* line 338, ../../../sass/carousel-component.scss */
+#genSidebarToggler:checked + .gen-page-wrap .gen-nav-toggle {
+  left: 160px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+/* line 343, ../../../sass/carousel-component.scss */
+#genSidebarToggler:checked + .gen-page-wrap .gen-page-content {
+  left: 160px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 359, ../../../sass/carousel-component.scss */
+ul.submenu {
+  overflow: hidden;
+  height: 0px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+
+/* line 366, ../../../sass/carousel-component.scss */
+.nav-button-wrapper-up, .nav-button-wrapper-down {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 372, ../../../sass/carousel-component.scss */
+.nav-button-wrapper-down {
+  bottom: 80px;
+}
+
+/* line 376, ../../../sass/carousel-component.scss */
+.nav-button-wrapper-up {
+  top: 80px;
+}

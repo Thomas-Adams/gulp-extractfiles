@@ -1,0 +1,36 @@
+/* line 2, ../../../sass/paragraph.scss */
+.paragraph-headlines .headline {
+  font-family: 'bmwtypechineseregular';
+  font-size: 2.25em;
+  font-weight: bold;
+}
+/* line 8, ../../../sass/paragraph.scss */
+.paragraph-headlines .subheadline {
+  font-family: 'bmwtypechineseregular';
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+/* line 15, ../../../sass/paragraph.scss */
+.paragraph-text {
+  position: absolute;
+  top: 65%;
+  color: white;
+  left: 7%;
+}
+
+/* line 22, ../../../sass/paragraph.scss */
+.paragraph-text-darkened {
+  position: absolute;
+  top: 65%;
+  color: gray;
+  left: 7%;
+}
+
+/* line 29, ../../../sass/paragraph.scss */
+#pgh-3 {
+  position: absolute;
+  top: 12%;
+  color: white;
+  left: 7%;
+}

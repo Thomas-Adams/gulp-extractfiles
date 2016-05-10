@@ -1,0 +1,66 @@
+/* Positioning of page navigation buttons */
+/* line 4, ../../../sass/pagetransitions.scss */
+div.overlay {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.8) url("images/loader.gif") no-repeat scroll center center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* line 15, ../../../sass/pagetransitions.scss */
+section {
+  text-align: center;
+  max-width: 100%;
+  position: relative;
+}
+
+/* line 21, ../../../sass/pagetransitions.scss */
+div.content {
+  position: absolute;
+  top: 0px;
+}
+
+/* This is mainly for the background images of each section ("page"). */
+/* !FOCUSED IMAGES */
+/*-----------------------------------------*/
+/* line 29, ../../../sass/pagetransitions.scss */
+.focuspoint {
+  position: relative;
+  /*Any position but static should work*/
+  overflow: hidden;
+  height: 100%;
+}
+
+/* line 34, ../../../sass/pagetransitions.scss */
+.focuspoint img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  display: block;
+  /* fill and maintain aspect ratio */
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: none;
+  max-width: none;
+}
+
+/* lazy loading styles */
+/* line 51, ../../../sass/pagetransitions.scss */
+.lazy {
+  opacity: 0;
+  -webkit-transition: opacity 0.333s ease-in;
+  -moz-transition: opacity 0.333s ease-in;
+  transition: opacity 0.333s ease-in;
+}
+
+/* line 56, ../../../sass/pagetransitions.scss */
+.lazy-loaded {
+  opacity: 1;
+}

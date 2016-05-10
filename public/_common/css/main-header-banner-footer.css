@@ -1,0 +1,169 @@
+/* Positioning of page navigation buttons */
+/* line 4, ../../../sass/main-header-banner-footer.scss */
+div.container-fluid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  perspective: 1200px;
+  padding: 0;
+}
+
+/* line 11, ../../../sass/main-header-banner-footer.scss */
+nav {
+  background: #47a3da;
+}
+
+/* line 48, ../../../sass/main-header-banner-footer.scss */
+header.left {
+  color: #EFEFEF;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+/* line 53, ../../../sass/main-header-banner-footer.scss */
+header.left h1 {
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+/* line 58, ../../../sass/main-header-banner-footer.scss */
+header.left i {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+/* line 65, ../../../sass/main-header-banner-footer.scss */
+header.left .logo {
+  width: 35%;
+  position: absolute;
+  top: 0;
+  right: 3%;
+  z-index: 6000;
+}
+
+/* line 72, ../../../sass/main-header-banner-footer.scss */
+header.right {
+  color: #EFEFEF;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+/* line 77, ../../../sass/main-header-banner-footer.scss */
+header.right h1 {
+  position: absolute;
+  top: 0px;
+  left: 40%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+/* line 82, ../../../sass/main-header-banner-footer.scss */
+header.right i {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  position: absolute;
+  right: 1%;
+}
+
+/* lazy loading styles */
+/* line 98, ../../../sass/main-header-banner-footer.scss */
+.lazy {
+  opacity: 0;
+  -webkit-transition: opacity 0.333s ease-in;
+  -moz-transition: opacity 0.333s ease-in;
+  transition: opacity 0.333s ease-in;
+}
+
+/* line 103, ../../../sass/main-header-banner-footer.scss */
+.lazy-loaded {
+  opacity: 1;
+}
+
+/* line 107, ../../../sass/main-header-banner-footer.scss */
+section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 118, ../../../sass/main-header-banner-footer.scss */
+section.current {
+  visibility: visible;
+  z-index: 1;
+}
+
+/* line 123, ../../../sass/main-header-banner-footer.scss */
+.ontop {
+  z-index: 999;
+}
+
+/* This is mainly for the background images of each section ("page"). */
+/* !FOCUSED IMAGES */
+/*-----------------------------------------*/
+/* line 131, ../../../sass/main-header-banner-footer.scss */
+.focuspoint {
+  position: relative;
+  /*Any position but static should work*/
+  overflow: hidden;
+  height: 100%;
+}
+
+/* line 136, ../../../sass/main-header-banner-footer.scss */
+.focuspoint img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  display: block;
+  /* fill and maintain aspect ratio */
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: none;
+  max-width: none;
+}
+
+/* line 151, ../../../sass/main-header-banner-footer.scss */
+div.overlay {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.5) url("images/712.gif") no-repeat scroll center center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}

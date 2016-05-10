@@ -1,0 +1,35 @@
+{
+    "name": "recliner",
+    "title": "Recliner.js",
+    "description": "Recliner is a super lightweight (1KB) production ready jQuery plugin for lazy loading images, iframes and other dynamic (AJAX) content.",
+    "keywords": [
+        "lazy",
+        "lazy load",
+        "jquery-plugin"
+    ],
+    "version": "0.2.2",
+    "author": {
+        "name": "Sourcey",
+        "url": "http://sourcey.com"
+    },
+    "maintainers": [
+        {
+            "name": "Kam Low",
+            "email": "auscaster@gmail.com",
+            "url": "https://github.com/auscaster"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "bugs": "https://github.com/sourcey/recliner/issues",
+    "homepage": "https://sourcey.com/recliner",
+    "docs": "https://github.com/sourcey/recliner",
+    "download": "https://github.com/sourcey/recliner/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.8"
+    }
+}

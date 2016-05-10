@@ -1,0 +1,321 @@
+/* line 4, ../../../sass/carousel-component-standalone.scss */
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+/* line 12, ../../../sass/carousel-component-standalone.scss */
+div#scroll-body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  transition: top 0.4s ease-in;
+  -ms-transition: top 0.4s ease-in;
+  -moz-transition: top 0.4s ease-in;
+  -webkit-transition: top 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+}
+
+/* line 26, ../../../sass/carousel-component-standalone.scss */
+section {
+  text-align: center;
+}
+
+/* line 30, ../../../sass/carousel-component-standalone.scss */
+.blue {
+  background-color: blue;
+  color: white;
+}
+
+/* line 38, ../../../sass/carousel-component-standalone.scss */
+.magenta {
+  background-color: magenta;
+  color: white;
+}
+
+/* line 43, ../../../sass/carousel-component-standalone.scss */
+.red {
+  background-color: red;
+  color: white;
+}
+
+/* line 48, ../../../sass/carousel-component-standalone.scss */
+.yellow {
+  background-color: yellow;
+  color: white;
+}
+
+/* line 53, ../../../sass/carousel-component-standalone.scss */
+.green {
+  background-color: green;
+  color: white;
+}
+
+/* line 58, ../../../sass/carousel-component-standalone.scss */
+.black {
+  background-color: black;
+  color: white;
+}
+
+/* line 63, ../../../sass/carousel-component-standalone.scss */
+.aqua {
+  background-color: aqua;
+}
+
+/* !FOCUSED IMAGES */
+/*-----------------------------------------*/
+/* line 69, ../../../sass/carousel-component-standalone.scss */
+.focuspoint {
+  position: relative;
+  /*Any position but static should work*/
+  overflow: hidden;
+  height: 100%;
+  background: black url("images/loader.gif") no-repeat scroll center center;
+}
+
+/* line 75, ../../../sass/carousel-component-standalone.scss */
+.focuspoint img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  display: block;
+  /* fill and maintain aspect ratio */
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: none;
+  max-width: none;
+}
+
+/* line 88, ../../../sass/carousel-component-standalone.scss */
+.lazy {
+  opacity: 0;
+  transition: opacity .333s ease-in;
+}
+
+/* line 93, ../../../sass/carousel-component-standalone.scss */
+.lazy-loaded {
+  opacity: 1;
+}
+
+/* line 99, ../../../sass/carousel-component-standalone.scss */
+#frog {
+  position: relative;
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+/* line 116, ../../../sass/carousel-component-standalone.scss */
+.main {
+  z-index: 0;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 121, ../../../sass/carousel-component-standalone.scss */
+.gen-page-content {
+  left: 0px;
+  margin: 0px 0px 0px 0px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+  text-align: center;
+}
+
+/* line 129, ../../../sass/carousel-component-standalone.scss */
+.gen-sidebar {
+  position: absolute;
+  top: 0px;
+  left: -160px;
+  background: #333;
+  z-index: 0;
+  width: 160px;
+  height: 100%;
+  padding: 30px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+/* line 138, ../../../sass/carousel-component-standalone.scss */
+.gen-sidebar ul {
+  padding: 0px 0px 0px 0px;
+}
+/* line 141, ../../../sass/carousel-component-standalone.scss */
+.gen-sidebar ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+/* line 144, ../../../sass/carousel-component-standalone.scss */
+.gen-sidebar ul li a:hover {
+  color: white;
+}
+
+/* line 153, ../../../sass/carousel-component-standalone.scss */
+.gen-nav-toggle {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0px;
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  z-index: 1;
+  cursor: pointer;
+  height: 38px;
+  width: 38px;
+  line-height: 30px;
+  color: white;
+  background-color: transparent;
+  padding: 4px 4px 4px 4px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 172, ../../../sass/carousel-component-standalone.scss */
+#genSidebarToggler {
+  display: none;
+}
+/* line 178, ../../../sass/carousel-component-standalone.scss */
+#genSidebarToggler + .gen-page-wrap .gen-sidebar {
+  position: absolute;
+  top: 0px;
+  left: -160px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+/* line 184, ../../../sass/carousel-component-standalone.scss */
+#genSidebarToggler + .gen-page-wrap .gen-nav-toggle {
+  left: 0px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+/* line 189, ../../../sass/carousel-component-standalone.scss */
+#genSidebarToggler + .gen-page-wrap .gen-page-content {
+  left: 0px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+/* line 200, ../../../sass/carousel-component-standalone.scss */
+#genSidebarToggler:checked + .gen-page-wrap .gen-sidebar {
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+  left: 0px;
+}
+/* line 205, ../../../sass/carousel-component-standalone.scss */
+#genSidebarToggler:checked + .gen-page-wrap .gen-nav-toggle {
+  left: 160px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+/* line 210, ../../../sass/carousel-component-standalone.scss */
+#genSidebarToggler:checked + .gen-page-wrap .gen-page-content {
+  left: 160px;
+  -webkit-transition: left 0.4s ease-in;
+  -moz-transition: left 0.4s ease-in;
+  transition: left 0.4s ease-in;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 226, ../../../sass/carousel-component-standalone.scss */
+ul.submenu {
+  overflow: hidden;
+  height: 0px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+
+/* line 233, ../../../sass/carousel-component-standalone.scss */
+.nav-button-wrapper-up, .nav-button-wrapper-down {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 239, ../../../sass/carousel-component-standalone.scss */
+.nav-button-wrapper-down {
+  bottom: 80px;
+}
+
+/* line 243, ../../../sass/carousel-component-standalone.scss */
+.nav-button-wrapper-up {
+  top: 80px;
+}
+
+/* line 249, ../../../sass/carousel-component-standalone.scss */
+.carousel {
+  margin: auto;
+  width: 400px;
+}
+
+/* line 254, ../../../sass/carousel-component-standalone.scss */
+.carousel-inner {
+  text-align: center;
+}
+/* line 256, ../../../sass/carousel-component-standalone.scss */
+.carousel-inner .item {
+  text-align: center;
+  margin: auto;
+}
+/* line 259, ../../../sass/carousel-component-standalone.scss */
+.carousel-inner .item img {
+  margin: auto;
+}
+
+/* line 266, ../../../sass/carousel-component-standalone.scss */
+.slick-carousel {
+  margin: auto;
+  width: 400px;
+}
+
+/* line 271, ../../../sass/carousel-component-standalone.scss */
+.slick-list {
+  margin: auto;
+  width: 400px;
+}
+
+/* line 276, ../../../sass/carousel-component-standalone.scss */
+.slick-slide {
+  text-align: center;
+}
+/* line 278, ../../../sass/carousel-component-standalone.scss */
+.slick-slide img {
+  margin: auto;
+}
+
+/* line 283, ../../../sass/carousel-component-standalone.scss */
+.slick-dots {
+  bottom: -55px;
+}

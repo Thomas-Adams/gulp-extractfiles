@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Test</title>
+        <meta name="description" content="First SWIG template">
+        <meta name="author" content="" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!--build:css stylesheet.min.css-->
+        <link href="_common/css/styles.css" rel="stylesheet">
+        <link href="_common/css/font-awesome.css" rel="stylesheet">
+        <link href="_common/css/bmw-fonts.css" rel="stylesheet">
+        <link href="_common/css/animations.css" rel="stylesheet">
+        <link href="_common/css/main-header-banner-footer.css" rel="stylesheet">
+        <link href="_common/css/slide-push-menu.css" rel="stylesheet">
+        <link href="_common/css/accordion-navigation.css" rel="stylesheet">
+        <link href="_common/css/cards.css" rel="stylesheet">
+        <link href="_common/css/carousel.css" rel="stylesheet">
+        <link href="_common/css/paragraph.css" rel="stylesheet">
+        <!--/build-->
+        <!-- build:js app.min.js-->
+        <script src="_common/js/lib/vendor/modernizr/modernizr.js"></script>
+        <script src="_common/js/lib/vendor/jquery/dist/jquery.js"></script>
+        <script src="_common/js/lib/vendor/fastclick/lib/fastclick.js"></script>
+        <script src="_common/js/lib/vendor/touch-swipe/jquery.touchSwipe.js"></script>
+        <script src="_common/js/lib/vendor/PreloadJS/lib/preloadjs-0.6.2.combined.js"></script>
+        <script src="_common/js/lib/vendor/jquery-focuspoint/js/jquery.focuspoint.js"></script>
+        <script src="_common/js/lib/vendor/bootstrap.js"></script>
+        <script src="_common/js/src/main-accordion-navigation.js"></script>
+        <!--/build -->
+        <!-- build:remove -->
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js"></' + 'script>')</script>
+        <!-- /build -->
+        <style type="text/css">
+
+
+
+        </style>
+    </head>
+    <body class="cbp-spmenu-push">
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+            <h3>Menu<i class="fa fa-times" id="navClose"></i></h3>
+            <ul class="accordion">
+                <li>
+                    <a href="#" class="js-accordion-trigger">Page 1</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#" id="p1">Section 1</a>
+                        </li>
+                        <li>
+                            <a href="#" id="p2">Section 2</a>
+                        </li>
+                        <li>
+                            <a href="#" id="p3">Section 3</a>
+                        </li>
+                        <li>
+                            <a href="#" id="p4">Section 4</a>
+                        </li>
+                        <li>
+                            <a href="#" id="p5">Section 5</a>
+                        </li>
+                        <li>
+                            <a href="#" id="p6">Section 6</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="accordion-navigation-2.html" class="js-accordion-trigger">Page 2</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Section 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Section 2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid">
+            <header>
+                <i class="fa fa-bars" id="navToggle"></i>
+                <h1>BMW China</h1>
+                <img class="logo" src="_media/bmw/logo.png">
+            </header>
+            <section data-animation="1" class="blue">
+                <div class="focuspoint" data-focus-x="0" data-focus-y="0">
+                    <img class="lazy main" data-src="_media/examples/Chrysanthemum.jpg" height="100%" data-image-h="100%"/>
+                </div>
+                <div class="cards">
+                    <div class="card anim1">
+                        <div class="card-image">
+                            <img class="lazy" data-src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                        </div>
+                        <div class="card-header">
+                            First Card
+                        </div>
+                        <div class="card-copy">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section data-animation="1" class="red">
+                <div class="focuspoint" data-focus-x="0" data-focus-y="0">
+                    <img class="lazy main" data-src="_media/examples/Desert.jpg"  height="100%" data-image-h="100%"/>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-image">
+                            <div id="irish-carousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#irish-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#irish-carousel" data-slide-to="1"></li>
+                                    <li data-target="#irish-carousel" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="_media/examples/landscapes/emerald-pasture-489729-ga.jpg" alt="Irish landscape"/>
+                                        <div class="carousel-caption">
+                                            Pastures
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="_media/examples/landscapes/irish-headlands-489888-ga.jpg" alt="Irish landscape"/>
+                                        <div class="carousel-caption">
+                                            Headlands
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="_media/examples/landscapes/limestone-bluffs-489639-ga.jpg" alt="Irish landscape"/>
+                                        <div class="carousel-caption">
+                                            Limestone
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#irish-carousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#irish-carousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            First Card
+                        </div>
+                        <div class="card-copy">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section data-animation="1" class="yellow">
+                <div class="focuspoint" data-focus-x="0" data-focus-y="0">
+                    <img class="lazy main" data-src="_media/examples/Hydrangeas.jpg" height="100%" data-image-h="100%"/>
+                </div>
+
+                <div align="center" class="embed-responsive embed-responsive-16by9">
+                    <video id="video1" controls="controls" class="embed-responsive-item" preload="auto" style="width: 100%; height: 211.458333333333px; position: relative; margin-top: 227.770833333333px;">
+                        <source src="http://iframe.bmw.com.cn/cn/zh/insights/events/pool/7_series/2015/common/video/home_main.mp4" type="video/mp4">
+                        <source src="http://iframe.bmw.com.cn/cn/zh/insights/events/pool/7_series/2015/common/video/home_main.ogv" type="video/webm">
+                        <source src="http://iframe.bmw.com.cn/cn/zh/insights/events/pool/7_series/2015/common/video/home_main.webm" type="video/ogg">
+                    </video>
+                </div>
+            </section>
+            <section data-animation="1" class="green">
+                <div class="focuspoint" data-focus-x="0" data-focus-y="0">
+                    <img class="lazy main" data-src="_media/examples/Jellyfish.jpg" height="100%" data-image-h="100%"/>
+                </div>
+                <div class="paragraph-headlines" id="pgh-3">
+                    <h2 class="headline">乘驾全新BMW 7系</h2>
+                    <h3 class="subheadline">我们便称之为“黑科技”。</h3>
+                </div>
+                <div class="paragraph-text-darkened"><p>乘驾全新BMW 7系<br>我们便称之为“黑科技”。<br>我们便称之为“黑科技”。<br>我们便称之为“黑科技”。</p></div>
+            </section>
+            <section data-animation="1" class="magenta">
+                <div class="focuspoint" data-focus-x="0" data-focus-y="0">
+                    <img class="lazy main" data-src="_media/examples/Koala.jpg" height="100%" data-image-h="100%"/>
+                </div>
+            </section>
+            <section data-animation="1" class="aqua">
+                <div class="focuspoint" data-focus-x="0" data-focus-y="0">
+                    <img class="lazy main" data-src="_media/examples/Penguins.jpg" height="100%" data-image-h="100%"/>
+                </div>
+            </section>
+        </div>
+        <div class="overlay">
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+/nbproject
+/bower_components
+.DS_Store
+.project
+.settings
+/node_modules
+/demo/js/analytics.js
+*.log
+/.idea

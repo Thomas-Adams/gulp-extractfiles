@@ -1,0 +1,30 @@
+{
+    "name": "BttrLazyLoading",
+    "version": "1.0.8",
+    "license": "MIT",
+    "main": [
+        "dist/jquery.bttrlazyloading.min.js",
+        "dist/bttrlazyloading.min.css"
+    ],
+    "author": "Julien Renaux",
+    "homepage": "http://bttrlazyloading.julienrenaux.fr",
+    "ignore": [
+        "node_modules/",
+        "bower_components/",
+        "src/",
+        "test/",
+        "LICENSE",
+        "README.md",
+        "copyright",
+        "version",
+        "gulpfile.js",
+        "package.json",
+        "bttrlazyloading.jquery.json"
+    ],
+    "dependencies": {
+        "jquery": ">=1.5"
+    },
+    "devDependencies": {
+        "jasmine": "~2.0"
+    }
+}

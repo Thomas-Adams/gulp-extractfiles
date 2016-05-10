@@ -1,0 +1,127 @@
+/* line 7, ../../../sass/popup-menu-right.scss */
+.gen-page-content {
+  position: relative;
+  z-index: 0;
+  left: 0px;
+  margin: 65px 0 0 10px;
+  max-width: 80%;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+
+/* line 16, ../../../sass/popup-menu-right.scss */
+.gen-sidebar {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #333;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out 0.5s;
+  -moz-transition: all 0.5s ease-out 0.5s;
+  transition: all 0.5s ease-out 0.5s;
+  transform: translate3d(0, 0, 0);
+}
+/* line 26, ../../../sass/popup-menu-right.scss */
+.gen-sidebar ul {
+  padding: 0px 0px 0px 10px;
+  list-style: none;
+}
+/* line 30, ../../../sass/popup-menu-right.scss */
+.gen-sidebar ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+/* line 33, ../../../sass/popup-menu-right.scss */
+.gen-sidebar ul li a:hover {
+  color: white;
+}
+
+/* line 41, ../../../sass/popup-menu-right.scss */
+.gen-sidebar.open {
+  width: 160px;
+  height: 500px;
+  right: 30px;
+  top: 30px;
+}
+
+/* line 50, ../../../sass/popup-menu-right.scss */
+.gen-sidebar-right {
+  position: fixed;
+  top: 0px;
+  right: -160px;
+  background: #333;
+  z-index: 1;
+  width: 160px;
+  height: 100%;
+  padding: 30px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+/* line 58, ../../../sass/popup-menu-right.scss */
+.gen-sidebar-right ul {
+  padding: 0px 0px 0px 0px;
+}
+/* line 61, ../../../sass/popup-menu-right.scss */
+.gen-sidebar-right ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+/* line 64, ../../../sass/popup-menu-right.scss */
+.gen-sidebar-right ul li a:hover {
+  color: white;
+}
+
+/* line 73, ../../../sass/popup-menu-right.scss */
+.gen-nav-toggle {
+  background-color: white;
+  bottom: 0;
+  color: black;
+  cursor: pointer;
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  height: 65px;
+  line-height: 40px;
+  max-width: 100%;
+  padding: 5px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.15s ease-out 0s;
+  z-index: 1;
+}
+
+/* line 93, ../../../sass/popup-menu-right.scss */
+.gen-nav-toggle-right {
+  position: fixed;
+  top: 0px;
+  right: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  z-index: 1;
+  cursor: pointer;
+  max-width: 100%;
+  height: 65px;
+  line-height: 40px;
+  color: black;
+  background-color: white;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+
+/* line 116, ../../../sass/popup-menu-right.scss */
+ul.submenu {
+  overflow: hidden;
+  height: 0px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}

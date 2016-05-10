@@ -1,0 +1,11 @@
+/* line 3, ../../../sass/infinite-scroll.scss */
+.main {
+  z-index: 0;
+}
+
+/* line 6, ../../../sass/infinite-scroll.scss */
+.gen-page-content {
+  left: 0px;
+  margin: 0px 0px 0px 0px;
+  padding-top: 50px;
+}

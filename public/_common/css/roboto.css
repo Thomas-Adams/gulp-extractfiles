@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'robotoregular';
+  src: url("fonts/roboto/roboto_regular-webfont.eot");
+  src: url("fonts/roboto/roboto_regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/roboto/roboto_regular-webfont.woff2") format("woff2"), url("fonts/roboto/roboto_regular-webfont.woff") format("woff"), url("fonts/roboto/roboto_regular-webfont.ttf") format("truetype"), url("fonts/roboto/roboto_regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
