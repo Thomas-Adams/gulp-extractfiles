@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "gulp plugin handling js/css files according to the gulp-processhtml directive in terms of cancatenating and minimization",
   "main": "index.js",
+  "repository" : {
+	  "type" : "git",
+	  "url" : "https://github.com/Thomas-Adams/gulp-extractfiles.git"
+  }
   "dependencies": {
     "fs": "0.0.2",
     "gulp": "^3.9.1",
